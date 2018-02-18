@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.rahmandaafrialdi_1202150065.DineIn">
+
+    <TextView
+        android:id="@+id/tv_detailMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Detail Customer :"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="127dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/tv_noMeja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="220dp"
+            android:text="No. Meja"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="190dp" />
+
+        <Spinner
+            android:id="@+id/spinner_noMeja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="200dp"
+            tools:layout_editor_absoluteY="190dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="190dp"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/button_pilihPesanan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Pilih Pesanan"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="251dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:onClick="onPilihPesan"/>
+
+</LinearLayout>
